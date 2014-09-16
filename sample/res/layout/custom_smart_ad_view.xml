@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300dip"
+        android:background="@drawable/wdj_ads_card_background_normal"
+        android:padding="15dip">
+
+    <com.fyzb.gg.sdk.volley.toolbox.NetworkImageView
+            android:id="@+id/app_widget_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:scaleType="centerCrop"/>
+
+    <TextView
+            android:id="@+id/app_widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="20dip"
+            android:textColor="#333333"/>
+
+    <ImageButton
+            android:id="@+id/app_widget_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/wdj_ads_close_widget_button_background"/>
+
+    <com.fyzb.gg.sdk.volley.toolbox.NetworkImageView
+            android:id="@+id/app_widget_big_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="6dip"
+            android:layout_below="@id/app_widget_icon"
+            android:scaleType="centerCrop"/>
+
+
+    <Button
+            android:id="@+id/app_widget_install_button"
+            android:layout_width="170dip"
+            android:layout_height="36dip"
+            android:layout_below="@id/app_widget_big_picture"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/wandou_font_color_white"
+            android:textSize="16dip"
+            android:text="@string/ads_install_at_once_text"
+            android:background="@drawable/wdj_phoenix_themed_button_background_default"/>
+</RelativeLayout>
